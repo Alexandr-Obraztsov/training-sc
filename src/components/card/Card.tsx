@@ -19,8 +19,8 @@ export function Card(props: CardProps) {
             <Title isDark={props.isDark}>Headline</Title>
             <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
             <Wrapper>
-                <Button>See more</Button>
-                <Button outlined>Save</Button>
+                <Button href="#">See more</Button>
+                <Button href="#" outlined>Save</Button>
             </Wrapper>
         </StyledCard>
     )

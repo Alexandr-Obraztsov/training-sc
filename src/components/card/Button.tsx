@@ -5,12 +5,8 @@ type StyledButtonProps = {
     outlined?: boolean
 }
 
-const Button = styled.a<StyledButtonProps>``
 
-export const Button = styled(Button).attrs(()=>{
-    return {
-        href: "#"
-    }})`
+export const Button = styled.a<StyledButtonProps>`
     width: 86px;
     height: 30px;
     background-color: ${props => props.outlined ? theme.button.outlined.background : theme.button.basic.background};
