@@ -8,13 +8,13 @@ import {ThemeProvider} from "styled-components";
 import {theme} from "./components/Theme";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+    document.getElementById('root') as HTMLElement
 );
 root.render(
-  <ThemeProvider theme={theme}>
-    <App />
-      <GlobalStyles />
-  </ThemeProvider>
+    <ThemeProvider theme={theme}>
+        <App/>
+        <GlobalStyles/>
+    </ThemeProvider>
 );
 
 reportWebVitals();

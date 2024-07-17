@@ -9,8 +9,6 @@ type StyledButtonProps = {
 export const Button = styled.a<StyledButtonProps>`
     width: 86px;
     height: 30px;
-    background-color: ${props => props.outlined ? theme.button.outlined.background : theme.button.basic.background};
-    color: ${props => props.outlined ? theme.button.outlined.text : theme.button.basic.text};
     border-radius: 5px;
     font-family: Inter, sans-serif;
     font-size: 10px;
@@ -18,6 +16,16 @@ export const Button = styled.a<StyledButtonProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid ${theme.button.basic.background};
     text-decoration: none;
+    border: 2px solid ${theme.button.basic.background};
+
+    ${props => {
+        if (props.outlined) {
+            return `background-color: ${theme.button.outlined.background};
+                    color: ${theme.button.outlined.text};`
+        }
+        return `background-color: ${theme.button.basic.background};
+                color: ${theme.button.basic.text};
+        `
+    }}
 `

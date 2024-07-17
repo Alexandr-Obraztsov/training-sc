@@ -15,7 +15,7 @@ export function Card(props: CardProps) {
     return (
         <StyledCard isDark={props.isDark}>
             <Image src={props.isDark ? theme.link.dark : theme.link.light}
-                 alt={props.isDark ? "Dark image" : "Light image"}/>
+                   alt={props.isDark ? "Dark image" : "Light image"}/>
             <Title isDark={props.isDark}>Headline</Title>
             <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
             <Wrapper>
@@ -31,7 +31,7 @@ const StyledCard = styled.main<CardProps>`
     height: 350px;
     border-radius: 15px;
     background-color: ${props => props.isDark ? theme.color.dark.background : theme.color.light.background};
-    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.56);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.18);
     padding: 10px;
 
     @media screen and (max-width: 300px) {
