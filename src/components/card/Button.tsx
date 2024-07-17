@@ -7,7 +7,7 @@ type StyledButtonProps = {
 
 const Button = styled.a<StyledButtonProps>``
 
-export const StyledButton = styled(Button).attrs(()=>{
+export const Button = styled(Button).attrs(()=>{
     return {
         href: "#"
     }})`
