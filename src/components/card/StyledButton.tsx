@@ -5,9 +5,9 @@ type StyledButtonProps = {
     outlined?: boolean
 }
 
-
-export const Button = styled.a<StyledButtonProps>`
-    width: 86px;
+export const StyledButton = styled.a<StyledButtonProps>`
+    max-width: 86px;
+    width: 100%;
     height: 30px;
     border-radius: 5px;
     font-family: Inter, sans-serif;

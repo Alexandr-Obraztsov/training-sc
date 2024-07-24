@@ -1,3 +1,5 @@
+import lightImage from "../assets/images/light.png";
+
 export const theme = {
     color: {
         light: {
@@ -12,7 +14,7 @@ export const theme = {
         }
     },
     link: {
-        light: "light.png",
+        light: lightImage,
         dark: "https://celes.club/uploads/posts/2022-06/1654319968_1-celes-club-p-krasivie-chernie-oboi-na-rabochii-stol-kra-1.jpg"
     },
     button: {
